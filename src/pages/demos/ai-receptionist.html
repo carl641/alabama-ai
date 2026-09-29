@@ -1,0 +1,127 @@
+<!--
+title: AI Receptionist Demo: Try an After-Hours Service Call
+description: Click through a scripted after-hours call to a fictional HVAC company: booking, gas-leak escalation, human handoff and the call summary your team gets.
+h1: AI Receptionist Demonstration
+crumb: AI receptionist
+card_title: AI receptionist demo
+summary: Play the caller in a scripted after-hours call and watch booking, emergency escalation and the call summary your team would receive.
+phase: Launch
+status: draft
+gate: Real working demo required; do not present simulated results as customer outcomes.
+scripts: demo-receptionist.js
+cta_heading: Discuss a similar workflow
+cta_text: Tell us how calls reach your business today and what happens after hours. We'll map where an AI receptionist would help, where it shouldn't, and how handoff to your team would work.
+cta_label: Discuss a similar workflow
+-->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Demo · AI receptionist</span>
+    <h1>AI Receptionist Demonstration</h1>
+    <p class="lede">It's 9:47 on a weekday night and someone calls <strong>Example Heating &amp; Air</strong>, a fictional HVAC company. You play the caller. Choose what to say, and watch how the assistant answers, when it hands off to a person, and what lands on your team's desk.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="demo">
+  <div class="container">
+    <div class="demo-label" role="note">
+      <span class="tag tag-demo">Demo</span>
+      <span><strong>This is a scripted browser demonstration with fictional data.</strong> The business, caller, phone numbers, addresses and appointment times are made up, and the replies follow a fixed script. A production AI receptionist uses a voice model on a real phone line and responds to what callers actually say. Nothing here is a client result, and nothing you click leaves your browser.</span>
+    </div>
+    <div class="split split-wide">
+      <div class="demo-shell">
+        <div class="demo-bar">
+          <span class="live">Sample call · Example Heating &amp; Air · after hours</span>
+          <button class="btn btn-light btn-sm" type="button" data-demo-restart>Restart</button>
+        </div>
+        <div class="demo-log" data-demo-log role="log" aria-live="polite" aria-label="Call transcript" tabindex="0"></div>
+        <div class="demo-choices" data-demo-choices role="group" aria-label="Choose what the caller says"></div>
+        <noscript><div class="demo-panel"><p>This demonstration needs JavaScript to run. The sections below describe each scenario.</p></div></noscript>
+      </div>
+      <div class="demo-shell">
+        <div class="demo-bar"><span>What your team receives</span></div>
+        <div class="demo-panel" style="border-top:0">
+          <h3>Call summary record</h3>
+          <dl class="kv" data-demo-summary></dl>
+        </div>
+        <div class="demo-panel">
+          <h3>Handoff status</h3>
+          <p data-demo-handoff role="status" style="margin:0">Waiting for the call to start.</p>
+        </div>
+        <div class="demo-panel">
+          <p class="hint">In a real deployment this record would be texted or emailed to the right person and logged in your scheduling or CRM system, with the recording or transcript attached where callers have been told and consent rules allow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The scenario</span>
+      <h2>Four calls worth trying</h2>
+      <p class="lede">Every branch starts the same way: the assistant says it's an automated assistant, then asks how it can help. Each path shows a different rule in action.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card"><h3>Routine repair booking</h3><p>The caller's air conditioner has stopped. The assistant first checks for anything dangerous, then collects name, callback number, a description of the problem and the service address, offers sample time slots and books one pending dispatcher review. It won't quote prices.</p></div>
+      <div class="card"><h3>Gas smell: emergency</h3><p>The assistant stops the intake immediately. It tells the caller to get out of the house, avoid anything that could make a spark, and call the gas utility's emergency line or 911, then pages the on-call technician and attempts a live transfer.</p></div>
+      <div class="card"><h3>"Can I talk to a person?"</h3><p>It doesn't argue or try to keep the caller. It explains the office is closed, offers a callback, and checks whether the problem is urgent enough to page the on-call technician tonight.</p></div>
+      <div class="card"><h3>A question it can't answer</h3><p>Asked whether a home warranty will cover a repair, it says it doesn't know rather than guessing, and offers to take a message for the office team.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Approval &amp; handoff design</span>
+      <h2>Who decides what</h2>
+      <p>The most important part of an AI receptionist isn't the conversation. It's the set of rules that decide when the conversation stops being the assistant's job.</p>
+      <ul class="checklist">
+        <li><strong>Safety first, always.</strong> Keywords and situations like gas, smoke, carbon monoxide or no heat in freezing weather skip straight to safety instructions and escalation. The assistant never tries to troubleshoot them.</li>
+        <li><strong>A person can always be reached.</strong> Asking for a human is honored every time, as a transfer or a scheduled callback.</li>
+        <li><strong>No commitments it can't keep.</strong> Bookings are held pending dispatcher review; prices, warranties and exceptions are passed to staff.</li>
+        <li><strong>Disclosure up front.</strong> Callers are told they're speaking with an automated assistant.</li>
+        <li><strong>Every call leaves a record.</strong> Your team gets a structured summary with a clear next action, whatever the outcome.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="flow-card">
+        <p class="flow-card-title">Escalation ladder in this demo</p>
+        <div class="flow-step ai"><span class="dot">AI</span><div><strong>Routine</strong><span>Book, pending dispatcher review next morning</span></div></div>
+        <div class="flow-step"><span class="dot">?</span><div><strong>Unknown or out of scope</strong><span>Say so, take a message for the office queue</span></div></div>
+        <div class="flow-step human"><span class="dot">☎</span><div><strong>Caller asks for a person</strong><span>Callback, or page on-call if urgent</span></div></div>
+        <div class="flow-step human"><span class="dot">!</span><div><strong>Safety risk</strong><span>Safety instructions, page on-call, live transfer</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Limits</span>
+      <h2>What this demo doesn't show</h2>
+      <ul class="xlist">
+        <li><strong>Real speech.</strong> Callers mumble, interrupt, change their minds and call from noisy trucks. A voice system has to handle that; a button click doesn't.</li>
+        <li><strong>Real calendars.</strong> The time slots are hard-coded. A real build reads and writes to your scheduling system.</li>
+        <li><strong>Real alerts.</strong> "Paging the on-call technician" is simulated. In production it's a text, call or app alert with a fallback if nobody answers.</li>
+        <li><strong>Accuracy or performance.</strong> A script always follows the path you choose. Real systems need testing against realistic calls before and after launch.</li>
+      </ul>
+      <p>{{todo: Replace or supplement with a live phone-line demo number once a real working voice demo exists.}}</p>
+    </div>
+    <div>
+      <span class="eyebrow">Building a real one</span>
+      <h2>What a production receptionist needs</h2>
+      <ol class="steps">
+        <li><h3>Your call rules</h3><p>What counts as an emergency, who's on call, service area, which jobs you book and which you don't.</p></li>
+        <li><h3>Phone and system access</h3><p>A phone number or forwarding setup, plus connections to your scheduling or CRM tool and your alerting method.</p></li>
+        <li><h3>Scripts and knowledge</h3><p>Approved answers to common questions, and a clear list of what the assistant must never answer.</p></li>
+        <li><h3>Testing and review</h3><p>Scenario testing before launch, then regular review of call summaries and handoffs. Recording, consent and any regulated uses should be reviewed with qualified advisers.</p></li>
+      </ol>
+      <p style="margin-top:16px">More on scope and approach: <a href="/services/ai-voice-agents/">AI receptionists and voice agents</a>. Try the other <a href="/demos/">demos</a>, or <a href="/book/">book a call</a> to talk through your own call flow.</p>
+    </div>
+  </div>
+</section>
+
+{{cta}}

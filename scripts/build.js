@@ -122,7 +122,7 @@ for (const p of publish) {
   for (const href of hrefs) {
     if (href.startsWith("/assets/") || href === "/_gates/") continue;
     if (!published.has(href)) {
-      (pages.has(href) ? warnings : errors).push(
+      (pages.has(href) && !ctx.production ? warnings : errors).push(
         pages.has(href)
           ? `${p.url} links to unpublished page ${href}`
           : `${p.url} links to missing page ${href}`

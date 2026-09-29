@@ -51,7 +51,7 @@ The site plan requires every claim to be real. Anything we could not verify (tea
 2. Fill in `site.config.js` (email, phone, base city, service model, form endpoint, booking URL, domain).
 3. Replace each `{{todo: …}}` in the page with verified content, or remove the section.
 4. When the page's gate is met, set `status: ready`.
-5. `npm run build:prod` publishes only ready pages. It fails if a ready page still has a placeholder or links to a page that isn't ready. Only ready pages go in `sitemap.xml`.
+5. `npm run build:prod` publishes only ready pages. It fails if a ready page still has a placeholder or links to a page that isn't ready (the shared nav and footer link to the core pages, so launch those together). Only ready pages go in `sitemap.xml`.
 
 Preview builds are `noindex` with a `Disallow: /` robots.txt, so a staging deploy stays out of search.
 
