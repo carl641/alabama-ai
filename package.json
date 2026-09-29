@@ -1,0 +1,14 @@
+{
+  "name": "alabama-ai",
+  "private": true,
+  "description": "Static marketing site for an Alabama AI consulting and implementation agency.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:prod": "node scripts/build.js --production",
+    "serve": "node scripts/serve.js",
+    "dev": "node scripts/build.js && node scripts/serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
