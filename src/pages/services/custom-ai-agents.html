@@ -1,0 +1,191 @@
+<!--
+title: Custom AI Agent Development for Businesses
+description: Custom AI agents for bounded business tasks: limited tool permissions, human approval controls, evaluation before launch and full ownership for you.
+h1: Custom AI Agent Development
+crumb: Custom AI agents
+card_title: Custom AI agents
+summary: For tasks that need reading, deciding and acting across several systems. Bounded scope, limited permissions and human approval built in.
+phase: Launch
+status: draft
+gate: Real engineering delivery capability and relevant demonstrations.
+cta_heading: Scope an AI agent
+cta_text: Describe the task you'd hand to a capable assistant if you had one. We'll say whether an agent is the right tool, and what a safe first version would look like.
+cta_label: Scope an AI agent
+-->
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Service · Custom AI agents</span>
+      <h1>Custom AI Agent Development</h1>
+      <p class="lede">An AI agent is software that works through a multi-step task on its own: it reads, decides what to do next and takes actions in your systems. <strong>We build agents for bounded jobs, with the minimum permissions they need and a person approving anything with consequences.</strong></p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/book/">Scope an AI agent</a>
+        <a class="btn btn-secondary" href="#controls">See how we keep agents in bounds</a>
+      </div>
+    </div>
+    <div class="flow-card" aria-label="Example: an agent preparing a supplier reorder">
+      <p class="flow-card-title">Example · weekly reorder prep</p>
+      <div class="flow-step"><span class="dot">1</span><div><strong>Scheduled start</strong><span>Every Monday morning</span></div></div>
+      <div class="flow-step ai"><span class="dot">AI</span><div><strong>Reads stock &amp; orders</strong><span>Checks inventory, open jobs and supplier emails</span></div></div>
+      <div class="flow-step ai"><span class="dot">AI</span><div><strong>Drafts purchase orders</strong><span>Explains why each item is on the list</span></div></div>
+      <div class="flow-step human"><span class="dot">✓</span><div><strong>Manager approves</strong><span>Nothing is sent to suppliers without sign-off</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div>
+      <h2>When you need an agent, and when you don't</h2>
+      <p>If a task always follows the same steps, a standard <a href="/services/workflow-automation/">workflow automation</a> is cheaper, faster and more predictable. An agent earns its extra cost when the steps depend on what it finds: which records to check, which rule applies, what to do when information conflicts.</p>
+      <p>We'll recommend the simpler option whenever it will do the job. More on that choice in <a href="/resources/ai-vs-traditional-automation/">AI vs. traditional automation</a>.</p>
+    </div>
+    <div class="grid grid-2">
+      <div>
+        <h3>Good fit</h3>
+        <ul class="checklist">
+          <li>A task that needs reading and judgment across two or more systems</li>
+          <li>Steps vary case by case, but the goal and the limits are clear</li>
+          <li>A person can check the result faster than doing the work</li>
+          <li>You're willing to start narrow and expand only on evidence</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Probably not a fit</h3>
+        <ul class="xlist">
+          <li>The steps are always the same: use workflow automation instead</li>
+          <li>Mistakes would be costly and can't be caught before they happen</li>
+          <li>The task has no clear definition of "done"</li>
+          <li>You want a general-purpose AI employee with access to everything</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Use cases</span>
+      <h2>Bounded tasks agents handle well</h2>
+      <p>Illustrative examples. Every agent we build is scoped to one clearly defined job.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card card-plain"><h3>Research &amp; preparation</h3><p>Gather information on a new lead or job from your records and approved sources, and prepare a briefing before the first call.</p></div>
+      <div class="card card-plain"><h3>Reconciliation</h3><p>Compare records across two systems, such as job logs against invoices, and list mismatches with a suggested fix for a person to confirm.</p></div>
+      <div class="card card-plain"><h3>Request handling</h3><p>Read an incoming request, look up the relevant account or policy, and prepare the response or next action for approval.</p></div>
+      <div class="card card-plain"><h3>Scheduling coordination</h3><p>Work out who is available and qualified, propose assignments and flag conflicts for a dispatcher.</p></div>
+      <div class="card card-plain"><h3>Document review</h3><p>Check incoming documents against a checklist and report what's missing or inconsistent.</p></div>
+      <div class="card card-plain"><h3>Internal assistant</h3><p>Answer staff questions that need looking up live data, not just documents, within the permissions that staff member already has.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="controls">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Controls</span>
+      <h2>How we keep agents in bounds</h2>
+      <p class="lede">The risk with agents isn't that they're unintelligent. It's that they can act. Our designs limit what they're able to do.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card"><h3>Bounded task</h3><p>A written definition of the agent's job, its inputs, its expected outputs and what counts as out of scope. Anything outside it is refused or handed to a person.</p></div>
+      <div class="card"><h3>Least-privilege tool access</h3><p>The agent gets its own credentials with only the permissions its task needs. Read-only wherever possible; no access to systems it doesn't use.</p></div>
+      <div class="card"><h3>Approval gates</h3><p>Actions that send messages, spend money, change records or make commitments wait for a person to approve, until you decide otherwise based on evidence.</p></div>
+      <div class="card"><h3>Full activity log</h3><p>Every step the agent takes and the reason it gave are recorded, so you can review what happened and why.</p></div>
+      <div class="card"><h3>Limits &amp; stop switch</h3><p>Caps on how many actions it can take and how much it can spend on AI usage, plus a simple way to pause it.</p></div>
+      <div class="card"><h3>Your ownership</h3><p>Code, prompts, configuration and documentation belong to you, in accounts you control wherever possible.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Demo</span>
+      <h2>See our approach in action</h2>
+      <p>Our <a href="/demos/lead-follow-up/">lead follow-up demonstration</a> shows the core pattern we use in agents: read an unstructured input, decide what it means, prepare an action, and stop for human approval.</p>
+      <p class="hint">Demos use made-up sample data. They are examples of our approach, not client results.</p>
+      <p>{{todo: Add a relevant agent-specific demonstration (multi-step task with tool calls and an approval gate) to meet this page's publication gate.}}</p>
+    </div>
+    <div id="deliverables">
+      <h2>What you receive</h2>
+      <ul class="checklist">
+        <li><strong>Agent specification:</strong> task, tools, permissions, approval points and success measures</li>
+        <li><strong>The working agent</strong>, deployed in your environment or accounts you own</li>
+        <li><strong>Evaluation suite:</strong> test cases with expected outcomes, re-run before every change</li>
+        <li><strong>Monitoring &amp; logs</strong> showing what the agent did, what it cost and where it failed</li>
+        <li><strong>Technical and plain-English documentation</strong>, so it isn't locked to us</li>
+        <li><strong>Handover</strong> for the people who approve its work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Testing &amp; failure handling</span>
+      <h2>Evaluation before trust</h2>
+      <p>Before an agent touches live systems, we test it against a set of cases drawn from your real work (with sensitive details removed), including awkward ones: missing information, conflicting records, requests that look legitimate but shouldn't be acted on.</p>
+      <ul class="checklist">
+        <li>We measure how often it completes the task correctly, and how it fails when it doesn't</li>
+        <li>It runs in a "suggest only" mode first; people compare its output with their own</li>
+        <li>When a tool or AI service is unavailable, it stops and reports rather than improvising</li>
+        <li>Model or prompt changes are re-tested against the full evaluation suite before release</li>
+      </ul>
+    </div>
+    <div>
+      <span class="eyebrow">Supported tools</span>
+      <h2>Systems and models we build with</h2>
+      <p>Agents act through the tools you connect them to: your CRM, job management, accounting, email or internal databases.</p>
+      <p>{{todo: List the AI model providers, agent frameworks and business systems the engineering team has actually built agents against. No systems without hands-on delivery.}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Scope &amp; cost</span>
+      <h2>How agent projects are priced</h2>
+      <p>Custom agents usually cost more than standard automations because they need more design, testing and monitoring. The main factors are the number of tools the agent uses, how varied the cases are, and how strict the approval and logging requirements are.</p>
+      <p>Running costs include AI usage (which varies with volume and task complexity), hosting and ongoing evaluation. We estimate these with you before you commit, and set limits so they can't run away.</p>
+      <p>{{todo: Real price or price range for a first custom agent pilot, and typical ongoing costs.}}</p>
+      <p><a href="/pricing/">See all pricing and engagement options →</a></p>
+    </div>
+    <div>
+      <span class="eyebrow">Process</span>
+      <h2>How an agent project runs</h2>
+      <ol class="steps">
+        <li><h3>Task definition</h3><p>Define the job, the tools, the limits and what success looks like.</p></li>
+        <li><h3>Evaluation set</h3><p>Collect real-style test cases before building, so progress is measurable.</p></li>
+        <li><h3>Build</h3><p>Build with least-privilege access, logging and approval gates.</p></li>
+        <li><h3>Suggest-only pilot</h3><p>The agent proposes; your team decides. We compare results.</p></li>
+        <li><h3>Controlled rollout</h3><p>Relax approvals only where the evidence supports it.</p></li>
+      </ol>
+      <p style="margin-top:16px">{{todo: Typical timeline for a custom agent pilot, in weeks.}} <a href="/process/">Full process →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><h2>Questions about custom AI agents</h2></div>
+    <div class="faq">
+      <details><summary>Is an AI agent safe to connect to our systems?</summary><div><p>It can be made much safer with limited permissions, approval gates, logs and spending caps, but no agent is risk-free. That's why we start in suggest-only mode and expand access only on evidence. See our <a href="/security/">security approach</a>.</p></div></details>
+      <details><summary>How is this different from ChatGPT or other AI assistants?</summary><div><p>General assistants are great for one-off work a person directs. A custom agent does one defined business task repeatedly, connects to your systems, and follows your rules and approval steps.</p></div></details>
+      <details><summary>What happens when the AI model changes?</summary><div><p>Providers update and retire models. We re-run the evaluation suite before switching, so you know whether behavior has changed before it affects your work.</p></div></details>
+      <details><summary>Do we own the agent?</summary><div><p>Yes. The code, prompts, configuration and documentation are yours. {{todo: Confirm ownership and licensing terms in the standard contract.}}</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Related</h2></div>
+    {{related: /services/, /services/workflow-automation/, /process/}}
+  </div>
+</section>
+
+{{cta}}
