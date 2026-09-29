@@ -1,0 +1,129 @@
+<!--
+title: AI Automation Demos: See What Our Systems Actually Do
+description: Try two working AI demonstrations built with fictional sample data: an after-hours AI receptionist call and a lead follow-up workflow with human approval.
+h1: See What Our AI Systems Actually Do
+crumb: Demos
+card_title: Working demos
+summary: Try an AI receptionist call and a lead follow-up workflow in your browser, built with fictional sample data and clear human handoffs.
+phase: Launch
+status: draft
+gate: Each demo has safe sample data, documented limits and human fallback.
+cta_heading: Start with a demo, then tell us what you'd change
+cta_text: Pick the workflow closest to yours and click through it. When you're ready, book a call and we'll talk through what a real version would connect to and where your team stays in control.
+cta_label: Try a demo
+cta_href: #demos
+-->
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Demonstrations</span>
+      <h1>See What Our AI Systems Actually Do</h1>
+      <p class="lede">Most AI sales pages describe what a system <em>could</em> do. These pages let you <strong>use</strong> one: click through a call, submit a sample lead, and watch every step, including the points where a person takes over.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#demos">Try a demo</a>
+        <a class="btn btn-secondary" href="#how-to-read">How to read these demos</a>
+      </div>
+    </div>
+    <div class="flow-card">
+      <p class="flow-card-title">Every demo shows</p>
+      <div class="flow-step"><span class="dot">1</span><div><strong>The scenario</strong><span>A fictional business and a realistic request</span></div></div>
+      <div class="flow-step ai"><span class="dot">AI</span><div><strong>What the system does</strong><span>Each step visible, including the rules it follows</span></div></div>
+      <div class="flow-step human"><span class="dot">✓</span><div><strong>Where a person steps in</strong><span>Approvals, escalations and handoffs</span></div></div>
+      <div class="flow-step"><span class="dot">!</span><div><strong>The limits</strong><span>What the demo leaves out and what a real build needs</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="how-to-read">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Read this first</span>
+      <h2>Demonstrations, not client results</h2>
+      <p>Both demos run on <strong>fictional sample data</strong>. "Example Heating &amp; Air," its callers and its leads are made up. Nothing you see here is a customer project, a measured outcome or a performance claim.</p>
+      <p>They exist so you can judge how we design these systems: what information gets captured, which decisions are automated, which ones never are, and what your team receives at the end.</p>
+      <p>Both demos run entirely in your browser. Nothing you type or click is sent anywhere, and no call is placed or email sent.</p>
+    </div>
+    <div>
+      <div class="demo-label"><span class="tag tag-demo">Demo</span><span>Every demo page carries this label. If you ever see a result on our site that isn't labeled as a demonstration, it should come from a real, permissioned client engagement.</span></div>
+      <h3>What a demo can and can't tell you</h3>
+      <ul class="checklist">
+        <li>How the workflow is structured, step by step</li>
+        <li>Where human approval and escalation sit</li>
+        <li>What record or summary your team would get</li>
+      </ul>
+      <ul class="xlist">
+        <li>How it would perform on your calls, leads or data</li>
+        <li>Accuracy, speed or revenue figures for your business</li>
+        <li>Which of your existing tools it would connect to (that's a scoping question)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="demos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Try a demo</span>
+      <h2>Two workflows small businesses ask about most</h2>
+      <p class="lede">Each takes two or three minutes. Pick the one closest to the problem you're trying to solve.</p>
+    </div>
+    <div class="grid grid-2">
+      <a class="card card-link" href="/demos/ai-receptionist/">
+        <span class="tag tag-demo">Demo · Browser simulation</span>
+        <h3>AI receptionist: an after-hours call</h3>
+        <p>You play the caller phoning a fictional HVAC company at night. Choose what to say and watch the assistant respond, while a live call summary fills in beside the conversation.</p>
+        <ul class="checklist">
+          <li>Routine repair booking with sample time slots</li>
+          <li>Gas-smell emergency: safety instructions and immediate on-call escalation</li>
+          <li>Caller who wants a person: callback or transfer</li>
+          <li>A question it can't answer: it says so and takes a message</li>
+        </ul>
+        <span class="card-arrow" aria-hidden="true">Try the receptionist demo →</span>
+      </a>
+      <a class="card card-link" href="/demos/lead-follow-up/">
+        <span class="tag tag-demo">Demo · Browser simulation</span>
+        <h3>Lead follow-up automation</h3>
+        <p>Submit a sample website inquiry (or edit it) and watch the workflow check it, classify it, log it, draft a reply and then stop and wait for a person to approve before anything goes out.</p>
+        <ul class="checklist">
+          <li>Validation and duplicate check</li>
+          <li>Intent and urgency rules shown in plain view</li>
+          <li>CRM record routed to a named role</li>
+          <li>Drafted reply you can edit, then approve</li>
+          <li>Follow-up task scheduled automatically</li>
+        </ul>
+        <span class="card-arrow" aria-hidden="true">Try the lead follow-up demo →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Design principles</span>
+      <h2>What the demos have in common</h2>
+      <p>These are the same rules we design real builds around. The demos simply make them visible.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card card-plain"><h3>A person owns every outcome</h3><p>Automation prepares the work. Anything that commits your business, such as prices, promises or exceptions, goes to the right person before it reaches a customer.</p></div>
+      <div class="card card-plain"><h3>Safety beats efficiency</h3><p>When something could be dangerous or urgent, the system stops trying to handle it and escalates to a human immediately.</p></div>
+      <div class="card card-plain"><h3>"I don't know" is an answer</h3><p>A system that guesses is worse than one that takes a message. Both demos show what happens when a request falls outside what they're built for.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">From demo to real system</span>
+      <h2>What changes in a production build</h2>
+      <p>A browser demo follows a script. A real deployment connects to your phone line, calendar, CRM and email, and has to cope with messy, unscripted input. That's where most of the build effort goes: testing against realistic scenarios, setting up monitoring, and agreeing exactly when the system hands off to your team.</p>
+      <p>See how we approach that for <a href="/services/ai-voice-agents/">AI receptionists and voice agents</a> and for <a href="/services/workflow-automation/">workflow automation</a>, or read <a href="/process/">how a project runs</a>.</p>
+    </div>
+    <div class="callout">
+      <p><strong>Want to see it on your own workflow?</strong> On a call we can walk through one of these demos, adapted to how your business actually takes calls or handles leads, and tell you honestly whether automation is worth it. <a href="/book/">Book a call</a>.</p>
+    </div>
+  </div>
+</section>
+
+{{cta}}

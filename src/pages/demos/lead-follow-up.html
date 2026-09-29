@@ -1,0 +1,145 @@
+<!--
+title: Lead Follow-Up Automation Demo with Human Approval
+description: Submit a fictional web lead and watch it get checked, classified, logged, routed and answered, with a person approving every reply before it's sent.
+h1: Lead Follow-Up Automation Demonstration
+crumb: Lead follow-up
+card_title: Lead follow-up demo
+summary: Submit a sample web lead and watch validation, classification, CRM logging, routing and a drafted reply that waits for human approval.
+phase: Launch
+status: draft
+gate: Real working demo required; do not present simulated results as customer outcomes.
+scripts: demo-lead-followup.js
+cta_heading: Discuss a similar workflow
+cta_text: Tell us where your leads come from today and what happens after they arrive. We'll map a follow-up workflow that fits your tools, with your team approving what goes out.
+cta_label: Discuss a similar workflow
+-->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Demo · Workflow automation</span>
+    <h1>Lead Follow-Up Automation Demonstration</h1>
+    <p class="lede">A homeowner fills in the contact form on the website of <strong>Example Heating &amp; Air</strong>, a fictional HVAC company. Submit the sample lead below, or change it, and watch each step of the follow-up workflow run. The reply is drafted automatically, but <strong>it doesn't go anywhere until a person approves it</strong>.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="demo">
+  <div class="container">
+    <div class="demo-label" role="note">
+      <span class="tag tag-demo">Demo</span>
+      <span><strong>This is a browser demonstration with fictional sample data.</strong> The business, the lead and the CRM are made up. Everything runs in your browser: no data leaves this page, nothing is stored, and no email is actually sent. Nothing here is a client result.</span>
+    </div>
+    <div class="split">
+      <div class="demo-shell">
+        <div class="demo-bar"><span>Website contact form (sample)</span><span>Example Heating &amp; Air</span></div>
+        <form class="form" data-lead-form novalidate style="border:0;border-radius:0">
+          <div class="form-row">
+            <label for="lead-name">Name</label>
+            <input id="lead-name" name="name" value="Taylor Example" autocomplete="off" required>
+          </div>
+          <div class="form-row">
+            <label for="lead-email">Email</label>
+            <input id="lead-email" name="email" type="email" value="taylor@example.com" autocomplete="off" required>
+          </div>
+          <div class="form-row">
+            <label for="lead-service">Service needed</label>
+            <select id="lead-service" name="service" required>
+              <option>AC or heating repair</option>
+              <option selected>New system estimate</option>
+              <option>Maintenance plan</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="lead-city">City</label>
+            <input id="lead-city" name="city" value="Sampletown" autocomplete="off" required>
+          </div>
+          <div class="form-row">
+            <label for="lead-message">Message</label>
+            <textarea id="lead-message" name="message" rows="5" required>Our upstairs never gets cool and the system is about 15 years old. Could someone come out and look at replacing it? We're usually home after 4.</textarea>
+            <p class="hint">Try words like "gas", "no heat", "leak", "urgent", "tune-up" or "broken" to see the rules change the result. Try email sam@example.com to trigger the duplicate check.</p>
+          </div>
+          <div class="btn-row" style="margin:0">
+            <button class="btn btn-primary" type="submit" data-lead-submit>Submit sample lead</button>
+            <button class="btn btn-secondary" type="button" data-lead-reset>Reset demo</button>
+          </div>
+          <p class="form-status" data-lead-formstatus role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="demo-shell">
+        <div class="demo-bar"><span>Automation run</span><span data-lead-runstate>Idle</span></div>
+        <div class="demo-panel" style="border-top:0">
+          <h3>Workflow steps</h3>
+          <ol class="pipeline" data-lead-pipeline>
+            <li data-step="validate"><span class="pi">1</span><div><strong>Validate &amp; dedupe</strong><small data-detail>Check required fields and look for an existing contact</small></div></li>
+            <li data-step="classify"><span class="pi">2</span><div><strong>Classify intent &amp; urgency</strong><small data-detail>Simple keyword rules, shown below</small></div></li>
+            <li data-step="crm"><span class="pi">3</span><div><strong>Create CRM record &amp; route</strong><small data-detail>Assign an owner by role</small></div></li>
+            <li data-step="draft"><span class="pi">4</span><div><strong>Draft personalized reply</strong><small data-detail>Fill an approved template</small></div></li>
+            <li data-step="approve"><span class="pi">5</span><div><strong>Wait for human approval</strong><small data-detail>Nothing is sent without a person's OK</small></div></li>
+            <li data-step="send"><span class="pi">6</span><div><strong>Send reply (simulated)</strong><small data-detail>Nothing actually leaves your browser</small></div></li>
+            <li data-step="task"><span class="pi">7</span><div><strong>Schedule follow-up task</strong><small data-detail>A reminder for the owner if there's no reply</small></div></li>
+          </ol>
+          <p class="sr-only" data-lead-announce role="status" aria-live="polite"></p>
+        </div>
+        <div class="demo-panel" data-lead-output hidden></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The scenario</span>
+      <h2>What happens to a web lead, step by step</h2>
+      <p class="lede">Most small businesses lose leads in the gap between "form submitted" and "someone replied." This workflow closes that gap without letting software speak for the business unsupervised.</p>
+    </div>
+    <ol class="steps steps-h">
+      <li><h3>Check</h3><p>Required fields and email format are validated, and the email is matched against existing contacts so a repeat inquiry updates the same record instead of creating a duplicate.</p></li>
+      <li><h3>Classify</h3><p>Transparent rules sort the lead by intent (repair, replacement estimate, maintenance) and urgency, and flag safety words that need a person immediately.</p></li>
+      <li><h3>Log &amp; route</h3><p>A CRM record is created and assigned to a role, such as the comfort advisor for estimates or the dispatcher for repairs, so ownership is never unclear.</p></li>
+      <li><h3>Draft</h3><p>A reply is filled in from an approved template, using the lead's name, city and request. It never includes prices or promises.</p></li>
+      <li><h3>Approve</h3><p>The owner reviews, edits if needed and approves. Only then is the reply sent and a follow-up task scheduled.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Safeguards</span>
+      <h2>Built so it can't embarrass you</h2>
+      <ul class="checklist">
+        <li><strong>Human approval before sending.</strong> In this demo every reply waits for a person. In a real build, you decide which (if any) low-risk replies could ever skip review, and that decision is written down.</li>
+        <li><strong>No automatic pricing or commitments.</strong> Templates never quote prices, discounts, warranties or arrival times. If an edited draft mentions a price or a guarantee, the demo flags it for sign-off.</li>
+        <li><strong>Safety words go to a person.</strong> Messages mentioning gas, smoke or carbon monoxide are routed to on-call staff with a safety-first reply, not a sales follow-up.</li>
+        <li><strong>Opt-out respected.</strong> Every reply includes a way to opt out, and an opt-out cancels the scheduled follow-ups.</li>
+        <li><strong>A named owner for every lead.</strong> Routing assigns a role, so there's always one person responsible for the next step.</li>
+      </ul>
+    </div>
+    <div>
+      <span class="eyebrow">Limits</span>
+      <h2>What this demo doesn't show</h2>
+      <ul class="xlist">
+        <li><strong>Real integrations.</strong> The CRM, email and task list here are simulated. A real build connects to the tools you already use.</li>
+        <li><strong>Language models on messy input.</strong> The demo uses simple keyword rules so you can see exactly why a lead was classified the way it was. Production systems may use an AI model for classification and drafting, which then needs testing against your real inquiries.</li>
+        <li><strong>Performance.</strong> There are no response-time, conversion or accuracy figures here, because a demo can't produce honest ones.</li>
+        <li><strong>Deliverability and compliance.</strong> Sending real email and text messages involves sender setup, consent and opt-out rules that are reviewed per project.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Building a real one</span>
+      <h2>What a production version needs</h2>
+      <p>To turn this into a working system for your business, we'd need to agree on where leads come from (web forms, email, ads, phone messages), which CRM or spreadsheet is the record, who owns each type of lead, and which reply templates you're comfortable with. Then we build, test with sample leads, run it alongside your current process, and only switch over once your team trusts it.</p>
+      <p>Read more about how we approach <a href="/services/workflow-automation/">workflow automation</a>, try the other <a href="/demos/">demos</a>, or <a href="/book/">book a call</a> to walk through your own lead process.</p>
+    </div>
+    <div class="callout">
+      <p><strong>A note on the sample data:</strong> "Taylor Example," "Sampletown" and the example.com addresses are placeholders. The duplicate check compares against two made-up contacts stored inside this page's script. If you type real details, they stay in your browser tab and disappear when you reset or leave the page.</p>
+    </div>
+  </div>
+</section>
+
+{{cta}}
