@@ -1,0 +1,156 @@
+<!--
+title: AI vs. Traditional Automation: Which Does Your Workflow Need?
+description: A practical decision framework for choosing between AI and rules-based automation, with examples where simple software is the better, cheaper choice.
+h1: AI vs. Traditional Automation: Which Does Your Workflow Need?
+crumb: AI vs. automation
+card_title: AI vs. traditional automation
+summary: A decision framework with examples where a form, a rule or a feature you already pay for beats an AI build.
+phase: Launch
+status: draft
+gate: Original expert review; cite outside facts; no invented results; one primary intent.
+cta_heading: Get a straight answer on your workflow
+cta_text: Describe the workflow. We'll tell you whether it needs AI, ordinary automation or neither, and what a first version would involve.
+cta_label: Explore workflow automation
+cta_href: /services/workflow-automation/
+-->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Buyer guide · Choosing the right tool</span>
+    <h1>AI vs. Traditional Automation: Which Does Your Workflow Need?</h1>
+    <p class="lede">Plenty of "AI projects" would be cheaper, faster and more reliable as ordinary automation: a form, a rule, a scheduled report. This guide gives you a framework for telling the difference, and shows where AI genuinely earns its place.</p>
+    <div class="byline">
+      <span>Written by {{todo: author name and role}}</span>
+      <span>Reviewed by {{todo: reviewer name and relevant delivery experience}}</span>
+      <span>Updated {{todo: date of last review}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split split-wide">
+    <article class="prose">
+      <h2 id="direct-answer">The direct answer</h2>
+      <p><strong>If you can write the rule down, use traditional automation. Use AI only for the step where a person currently has to read, interpret or write something that doesn't follow a fixed pattern.</strong> Most good business systems are mostly rules, with AI at one or two steps and a person reviewing anything that matters.</p>
+      <p>Rules-based automation does exactly what it's told, every time, and costs little to run. AI handles messy language and variation, but it can be wrong in ways that look plausible, and it usually carries a per-use cost. Pick the tool that matches the step, not the one that sounds more modern.</p>
+
+      <h2 id="definitions">What each one actually is</h2>
+      <h3>Traditional automation</h3>
+      <p>Software that follows explicit instructions: "when a form is submitted, create a contact in the CRM, send this email and add a task for Monday." It includes the automation features built into tools you already use, dedicated automation platforms, scheduled reports, templates and simple scripts. Given the same input, it produces the same output.</p>
+      <h3>AI (in the business-automation sense)</h3>
+      <p>Language models and related tools that interpret unstructured input (an email, a phone call, a scanned document, a free-text message) and produce a judgment or a draft: "this is a warranty claim," "the caller wants a Tuesday appointment," "here is a reply." The same input can produce slightly different outputs, and confidence varies.</p>
+
+      <h2 id="framework">A five-question decision framework</h2>
+      <p>Ask these about each step of the workflow, not the workflow as a whole.</p>
+      <ol>
+        <li><strong>Is the input structured?</strong> Dropdowns, checkboxes, fixed fields and system data point to rules. Free text, voice, images and documents in varied formats point to AI.</li>
+        <li><strong>Can you write the rule?</strong> If an experienced employee can explain the decision as "if this, then that" in a few lines, automate the rule. If they say "it depends; I just know," that step may need AI plus review.</li>
+        <li><strong>What does an error cost?</strong> Where a mistake is expensive, illegal or hard to reverse, prefer predictable rules and put a person on any AI step.</li>
+        <li><strong>How much variation is there?</strong> Ten known cases? Rules. Hundreds of phrasings of the same request? AI is good at that.</li>
+        <li><strong>Do you need to explain the outcome?</strong> If you must show exactly why something happened, such as to a customer, auditor or regulator, rules are easier to explain.</li>
+      </ol>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th></th><th>Traditional automation</th><th>AI</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Best at</strong></td><td>Moving data, following fixed rules, scheduling, calculating</td><td>Reading, classifying, summarizing and drafting varied language</td></tr>
+            <tr><td><strong>Consistency</strong></td><td>Identical output for identical input</td><td>Usually right, occasionally wrong in plausible-looking ways</td></tr>
+            <tr><td><strong>Running cost</strong></td><td>Typically a flat software subscription</td><td>Often metered per use on top of subscriptions</td></tr>
+            <tr><td><strong>When it breaks</strong></td><td>Fails loudly on unexpected input</td><td>May carry on with a wrong answer unless checks are built in</td></tr>
+            <tr><td><strong>Explaining results</strong></td><td>Straightforward: follow the rule</td><td>Harder; needs logging and review</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="simple-wins">Where simple software is the better choice</h2>
+      <p>These are common requests where we'd recommend not using AI, or using very little of it.</p>
+      <h3>"An AI to book appointments from our website"</h3>
+      <p>If customers are already on your site, a booking page with your real availability does the job with no ambiguity. A chatbot adds cost and a chance of misunderstanding. AI helps with booking by <em>phone</em>, where the input is speech; see our <a href="/demos/ai-receptionist/">AI receptionist demo</a>.</p>
+      <h3>"AI to collect information from new clients"</h3>
+      <p>A well-designed form with required fields and dropdowns gets cleaner data than a conversation. Use AI only if the information arrives as documents or free text you can't control.</p>
+      <h3>"AI to send reminders and follow-ups"</h3>
+      <p>Time-based reminders are rules: "two days before the appointment, send this text." Many scheduling and CRM tools do it already. AI can personalize the wording, but it's rarely needed.</p>
+      <h3>"AI to produce our weekly numbers"</h3>
+      <p>A scheduled report or dashboard pulling from your systems is accurate and repeatable. AI can write a plain-language summary on top, but the numbers should come from the report, not from a model.</p>
+      <h3>"AI to route jobs to the right technician"</h3>
+      <p>If routing depends on service area, skill and availability, those are rules and a lookup table. AI only belongs if the job description arrives as free text that has to be interpreted first.</p>
+
+      <h2 id="ai-earns-it">Where AI earns its place</h2>
+      <ul>
+        <li><strong>Phone calls and voicemails</strong>, where speech has to be understood and answered.</li>
+        <li><strong>Inbound email and messages</strong> that need sorting by intent and urgency before a rule can act on them.</li>
+        <li><strong>Documents in inconsistent formats</strong>, like supplier invoices, applications and correspondence, where fields have to be found and extracted.</li>
+        <li><strong>Drafting</strong> replies, summaries, estimates and notes that a person then reviews.</li>
+        <li><strong>Answering questions from your own material</strong>, where people phrase the same question many different ways.</li>
+      </ul>
+      <p>Even in these cases, the surrounding steps (logging, routing, notifying, updating records) are usually rules. That's the pattern our <a href="/services/workflow-automation/">workflow automation</a> work follows: rules for the predictable parts, AI for interpretation, a person for decisions that matter.</p>
+
+      <h2 id="worked-example">Worked example: splitting one workflow into steps</h2>
+      <div class="callout callout-warn">
+        <p><strong>Illustrative example.</strong> A hypothetical business used to demonstrate the framework; not a client project.</p>
+      </div>
+      <p>A commercial cleaning company receives new-business inquiries through a website form, email and phone. The owner asks for "an AI system to handle leads." Broken into steps and put through the five questions:</p>
+      <ol>
+        <li><strong>Website form arrives.</strong> Structured input. <em>Rules:</em> create the lead in the CRM and send an acknowledgment.</li>
+        <li><strong>Email inquiry arrives.</strong> Free text in many styles. <em>AI:</em> extract building type, approximate size, frequency and location into the same fields as the form.</li>
+        <li><strong>Phone inquiry arrives.</strong> Speech. <em>AI</em> receptionist collects the same fields, or a person does during office hours.</li>
+        <li><strong>Check service area.</strong> A list of ZIP codes. <em>Rules.</em></li>
+        <li><strong>Send a follow-up with a site-visit booking link.</strong> <em>Rules</em>, with a template.</li>
+        <li><strong>Prepare the quote.</strong> Depends on the site visit and judgment. <em>Person</em>, with AI optionally drafting the proposal text from their notes.</li>
+      </ol>
+      <p>Two of six steps use AI. The result is cheaper to run and easier to fix than an "AI handles everything" design, and it fails more predictably: if the AI can't extract a field from an email, the lead still lands in the CRM flagged for a person. You can watch a similar flow in our <a href="/demos/lead-follow-up/">lead follow-up demo</a>, which uses sample data.</p>
+
+      <h2 id="costs">Costs and tradeoffs</h2>
+      <ul>
+        <li><strong>Build effort:</strong> rules are quick to build for simple flows but grow tangled as exceptions pile up; AI handles variation with less rule-writing but needs more testing.</li>
+        <li><strong>Running cost:</strong> AI steps often add metered fees. At high volume, that's a reason to keep AI to the steps that need it.</li>
+        <li><strong>Maintenance:</strong> rules break when a form or system changes; AI steps need retesting when the underlying model is updated.</li>
+        <li><strong>Review time:</strong> every AI step with real consequences needs someone to check it. Include that time in the business case.</li>
+      </ul>
+      <p>For a fuller treatment of budgets, see <a href="/resources/ai-agency-cost/">how much an AI agency costs</a>.</p>
+
+      <h2 id="questions">Questions to ask anyone proposing AI</h2>
+      <p>Whether the proposal comes from an agency, a software vendor or someone on your own team, these questions quickly show whether AI is being used where it belongs.</p>
+      <ol>
+        <li><strong>"Which specific steps use AI, and why can't a rule do them?"</strong> A good answer names the step and the kind of input that makes rules impractical.</li>
+        <li><strong>"What happens when the AI step is unsure or wrong?"</strong> Look for a concrete fallback: a flag, a queue for a person, a default action.</li>
+        <li><strong>"What does each AI step cost to run at our volume?"</strong> Usage fees should be estimated, not waved away.</li>
+        <li><strong>"How will we know it's working?"</strong> Ask how accuracy is checked after launch, and who looks at the results.</li>
+        <li><strong>"Could we get most of the benefit without AI?"</strong> An honest provider will sometimes say yes.</li>
+      </ol>
+      <p>If the answers are vague, ask for a smaller first version: the rules-based parts of the workflow first, with the AI step added once the rest is running reliably. That sequence is cheaper to test and easier to undo.</p>
+
+      <h2 id="when-not-to-buy">When not to buy AI</h2>
+      <ul>
+        <li>Every step of the workflow passes the "can you write the rule?" test.</li>
+        <li>The tool you already pay for has an automation feature you haven't turned on.</li>
+        <li>An error would be costly and nobody is available to review AI output.</li>
+        <li>Volume is low enough that a person handling the unstructured step takes minutes a week.</li>
+        <li>The inputs could be made structured, for example by replacing an email address with a form.</li>
+      </ul>
+      <p>Not sure where your workflow falls? Our guide to <a href="/resources/ai-for-alabama-small-businesses/">where small businesses should start</a> helps you pick a candidate, and the <a href="/resources/">guides page</a> has the rest of the series.</p>
+    </article>
+    <aside class="toc" aria-labelledby="toc-vs">
+      <h2 id="toc-vs">On this page</h2>
+      <ol>
+        <li><a href="#direct-answer">The direct answer</a></li>
+        <li><a href="#definitions">What each one is</a></li>
+        <li><a href="#framework">Decision framework</a></li>
+        <li><a href="#simple-wins">Where simple software wins</a></li>
+        <li><a href="#ai-earns-it">Where AI earns its place</a></li>
+        <li><a href="#worked-example">Worked example</a></li>
+        <li><a href="#costs">Costs and tradeoffs</a></li>
+        <li><a href="#questions">Questions to ask</a></li>
+        <li><a href="#when-not-to-buy">When not to buy AI</a></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><h2>Related</h2></div>
+    {{related: /services/workflow-automation/, /resources/ai-for-alabama-small-businesses/, /demos/lead-follow-up/}}
+  </div>
+</section>
+
+{{cta}}
