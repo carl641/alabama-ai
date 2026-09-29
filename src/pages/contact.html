@@ -1,0 +1,63 @@
+<!--
+title: Contact Us | Talk to Our AI Team
+description: Email, call or send an inquiry to a real person on our AI team. See what happens after you get in touch, and book a call directly if you prefer.
+h1: Talk to Our AI Team
+crumb: Contact
+card_title: Contact us
+summary: Email, phone or an inquiry form, all answered by a person, not a chatbot.
+phase: Launch
+status: draft
+gate: Form routes correctly; server-side validation; confirmation tested.
+cta_heading: Prefer to pick a time?
+cta_text: Skip the back-and-forth and book a 30-minute AI opportunity call directly.
+cta_label: Book a call
+-->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Talk to Our AI Team</h1>
+    <p class="lede">Every message here is read and answered by a person on our team. There's no chatbot in the way. Use whichever method suits you.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div>
+      <h2>Send an inquiry</h2>
+      <p>Tell us a little about your business and the workflow you'd like to improve. A few sentences is plenty.</p>
+      {{contact_form}}
+    </div>
+    <div>
+      <h2>Other ways to reach us</h2>
+      <dl class="kv">
+        <dt>Email</dt><dd>{{email_link}}</dd>
+        <dt>Phone</dt><dd>{{phone_link}}</dd>
+        <dt>Hours</dt><dd>{{todo: Hours when phone and email are monitored, in Central Time}}</dd>
+        <dt>Base</dt><dd>{{site.baseCity}}, Alabama</dd>
+      </dl>
+      <p style="margin-top:16px">We serve businesses across Alabama. {{todo: Truthful note on meetings: e.g. whether in-person meetings are available and where, or that meetings are by video. Do not list an office address you don't operate from.}}</p>
+      <div class="callout">
+        <p><strong>Please don't send sensitive information</strong> such as passwords, customer records, health or financial details through this form or by email. If a project needs that kind of data, we'll agree a safer way to handle it. See our <a href="/security/">security approach</a>.</p>
+      </div>
+      <p>Ready to talk now? <a href="/book/">Book an AI opportunity call</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What happens next</span>
+      <h2>After you get in touch</h2>
+    </div>
+    <ol class="steps steps-h">
+      <li><h3>A person reads it</h3><p>Your inquiry goes to {{todo: named person or role who receives inquiries}}, not an automated sales sequence.</p></li>
+      <li><h3>We reply</h3><p>We aim to reply within {{todo: realistic reply time you can consistently meet, e.g. one business day}}, with any questions or a few suggested times to talk.</p></li>
+      <li><h3>A short call</h3><p>If it looks like a fit, we'll talk for about 30 minutes about the workflow and whether AI is the right tool.</p></li>
+      <li><h3>A clear next step</h3><p>You'll get a recommendation: a scoped estimate, a suggestion to use a tool you already have, or an honest "we're not the right fit."</p></li>
+    </ol>
+    <p style="margin-top:20px" class="hint">We use your details only to respond to your inquiry. See our <a href="/privacy/">privacy notice</a>.</p>
+  </div>
+</section>
+
+{{cta}}

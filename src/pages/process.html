@@ -1,0 +1,157 @@
+<!--
+title: Our AI Implementation Process | From Idea to Working System
+description: How an AI project runs with us: discovery, baseline, pilot, testing, rollout, documentation, support, and who owns the accounts, code and data.
+h1: From AI Opportunity to a Working System
+crumb: Process
+card_title: How a project runs
+summary: Discovery, baseline, pilot, testing, rollout and support, with clear responsibilities and client ownership of accounts, code and data.
+phase: Launch
+status: draft
+gate: Operations lead approves scope, responsibilities and claims.
+cta_heading: Scope a first project
+cta_text: Bring one workflow you'd like to fix. We'll talk through whether it fits, what a sensible first step looks like and roughly what it would cost.
+cta_label: Scope a first project
+-->
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Process</span>
+      <h1>From AI Opportunity to a Working System</h1>
+      <p class="lede">Most AI projects that fail do so for ordinary reasons: unclear scope, no baseline, no testing, nobody responsible after launch. Our process is built to prevent those, one step at a time, with a decision point before each spend.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/book/">Scope a first project</a>
+        <a class="btn btn-secondary" href="#responsibilities">Who does what</a>
+      </div>
+    </div>
+    <div class="flow-card">
+      <p class="flow-card-title">The short version</p>
+      <div class="flow-step"><span class="dot">1</span><div><strong>Discovery &amp; baseline</strong><span>Understand the work and measure it</span></div></div>
+      <div class="flow-step ai"><span class="dot">2</span><div><strong>Pilot</strong><span>A small, tested build on safe data</span></div></div>
+      <div class="flow-step ai"><span class="dot">3</span><div><strong>Rollout</strong><span>Go live with training and documentation</span></div></div>
+      <div class="flow-step human"><span class="dot">✓</span><div><strong>Support &amp; ownership</strong><span>Monitored, maintained, and yours</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Step by step</span>
+      <h2>What happens at each stage</h2>
+      <p>You can stop after any stage and keep what's been delivered. Each stage ends with something concrete you can review.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>1. Discovery</h3>
+        <p>An opportunity call, then short interviews with the people who do the work. We map the workflow as it really runs: the steps, the tools, the handoffs and the exceptions. We also ask what data the workflow touches and who is allowed to see it.</p>
+        <p><strong>You get:</strong> a written summary of the workflow and a go / no-go recommendation. Larger or unclear situations become a formal <a href="/services/ai-consulting/">AI assessment</a>.</p>
+        <p class="hint">Typical duration: {{todo: Typical discovery duration.}}</p>
+      </li>
+      <li>
+        <h3>2. Baseline</h3>
+        <p>Before building anything, we record how the workflow performs today: volumes, time per task, response times, error or drop-off rates, whatever matters for this problem. Where numbers don't exist, we agree a simple way to sample them.</p>
+        <p><strong>You get:</strong> a baseline and the success measures the pilot will be judged against.</p>
+        <p class="hint">Typical duration: {{todo: Typical baseline duration.}}</p>
+      </li>
+      <li>
+        <h3>3. Pilot scope and build</h3>
+        <p>We agree one narrow pilot in writing: inputs, outputs, systems it connects to, where a person approves, what it must never do, and what it costs. Then we build it, in your accounts wherever practical, using test or sample data first.</p>
+        <p><strong>You get:</strong> a working pilot, a written scope, and a demo session with the people who will use it.</p>
+        <p class="hint">Typical duration: {{todo: Typical pilot build duration.}}</p>
+      </li>
+      <li>
+        <h3>4. Testing</h3>
+        <p>We test against realistic cases, including awkward ones: incomplete information, angry customers, off-topic questions, system outages, and attempts to get the system to do something it shouldn't. Your team reviews outputs and flags anything wrong. Failures get fixed or designed around, and the remaining limits get written down.</p>
+        <p><strong>You get:</strong> a test log, known limitations, and a sign-off decision.</p>
+        <p class="hint">Typical duration: {{todo: Typical testing duration.}}</p>
+      </li>
+      <li>
+        <h3>5. Rollout</h3>
+        <p>We switch the system on gradually where possible: a limited set of cases, a limited time window or a single team first, with close monitoring. Staff are trained on the parts they touch, including how to override or switch it off.</p>
+        <p><strong>You get:</strong> a live system, trained staff and a comparison against the baseline once there's enough data.</p>
+        <p class="hint">Typical duration: {{todo: Typical rollout duration.}}</p>
+      </li>
+      <li>
+        <h3>6. Documentation</h3>
+        <p>Every system comes with plain-language documentation: what it does, what it connects to, which accounts and credentials it uses, where prompts and settings live, how to pause it, and who to call when something looks wrong.</p>
+        <p><strong>You get:</strong> a runbook your team, or another provider, can follow.</p>
+      </li>
+      <li>
+        <h3>7. Support</h3>
+        <p>AI systems need upkeep. Vendors change models and pricing, your business changes its services and hours, and edge cases appear. Ongoing support covers monitoring, fixes, prompt and knowledge updates, and periodic re-testing. It's optional, and scoped separately.</p>
+        <p><strong>You get:</strong> {{todo: Support terms actually offered: hours, response targets, channels and what's included. Do not state response times until they are committed to in contracts.}}</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="ownership">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Ownership</span>
+      <h2>Who owns what</h2>
+      <p>Our default is simple: <strong>what we build for you is yours</strong>, and it runs on accounts you control. If you part ways with us, you should be able to keep running the system or hand it to someone else.</p>
+      <p>{{todo: Confirm ownership and IP terms match the actual client contract, including any reusable components or templates the agency retains rights to.}}</p>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Item</th><th>Default owner</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Software accounts (AI platforms, automation tools, phone numbers)</td><td>You</td><td>Opened in your business's name and billed to you. We work through user access you grant.</td></tr>
+          <tr><td>Your data (customer records, documents, call logs)</td><td>You</td><td>We access only what the workflow needs. See <a href="/security/">security</a>.</td></tr>
+          <tr><td>Configurations, prompts and workflows built for you</td><td>You</td><td>Exported and documented at handover.</td></tr>
+          <tr><td>Custom code written for you</td><td>You</td><td>Stored in a repository you own or delivered to you.</td></tr>
+          <tr><td>Documentation and runbooks</td><td>You</td><td>Yours to keep and share with other providers.</td></tr>
+          <tr><td>General know-how and reusable internal tooling</td><td>Us</td><td>{{todo: Describe what, if anything, the agency retains and how clients are licensed to use it.}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="responsibilities">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Responsibilities</span>
+      <h2>What we do, and what we need from you</h2>
+      <p>Projects move fastest when both sides know their part. This is the usual split; your written scope confirms it for your project.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Area</th><th>We handle</th><th>You handle</th></tr></thead>
+        <tbody>
+          <tr><td>Discovery</td><td>Run interviews, map the workflow, write up findings</td><td>Make the right people available; share how the work really happens</td></tr>
+          <tr><td>Baseline</td><td>Define measures, collect or sample data, report the baseline</td><td>Provide access to records or reports; confirm the numbers look right</td></tr>
+          <tr><td>Accounts &amp; access</td><td>Specify which accounts are needed and the minimum permissions</td><td>Open accounts in your name, add payment methods, grant and later revoke access</td></tr>
+          <tr><td>Build</td><td>Design, configure and code the system; keep a change log</td><td>Supply content (policies, FAQs, pricing rules, scripts) and answer questions promptly</td></tr>
+          <tr><td>Testing</td><td>Write test cases, run tests, fix issues, document limits</td><td>Review outputs, flag errors, and sign off before go-live</td></tr>
+          <tr><td>Human approval</td><td>Build review and escalation steps into the workflow</td><td>Name who approves, who is on call, and act on escalations</td></tr>
+          <tr><td>Rollout</td><td>Stage the launch, monitor closely, train staff</td><td>Tell customers or staff about changes where appropriate; attend training</td></tr>
+          <tr><td>Legal &amp; compliance</td><td>Flag questions we spot (call recording, consent, regulated data)</td><td>Get qualified legal or compliance advice and make the final decisions</td></tr>
+          <tr><td>Ongoing</td><td>Support, if contracted: monitoring, fixes, updates</td><td>Pay third-party software and usage fees; report problems; keep content current</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Questions about the process</h2></div>
+    <div class="faq">
+      <details><summary>Can we skip the baseline?</summary><div><p>You can, but we don't recommend it. Without a "before" measurement, nobody can say whether the system is working, and decisions about expanding or stopping it become guesses. For small projects the baseline can be a simple sample of a week's work.</p></div></details>
+      <details><summary>What if the pilot doesn't meet its success measures?</summary><div><p>Then we look at why. Sometimes a design change fixes it; sometimes the workflow isn't a good fit for AI. Either way you keep the documentation and findings, and you decide whether to adjust, try something else or stop.</p></div></details>
+      <details><summary>How long does a typical project take?</summary><div><p>It depends mostly on how many systems are involved and how quickly content and access arrive. {{todo: Truthful typical end-to-end range for a first project, based on actual delivery.}}</p></div></details>
+      <details><summary>Do you work on-site?</summary><div><p>Our delivery model is {{site.serviceModel}}. {{todo: Truthful statement of where in Alabama on-site work (kick-offs, workshops, installs) is available and how travel is billed.}}</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head"><h2>Related</h2></div>
+    {{related: /services/ai-consulting/, /pricing/, /security/}}
+  </div>
+</section>
+
+{{cta}}

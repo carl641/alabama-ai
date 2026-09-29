@@ -1,0 +1,148 @@
+<!--
+title: Security: How We Handle Data, Access & AI Risk
+description: How we handle your data, system access and AI risk: least-privilege access, client-owned accounts, subprocessors, retention, human approval and testing.
+h1: How We Handle Data, Access and AI Risk
+crumb: Security
+card_title: Security & data handling
+summary: Least-privilege access, client-owned accounts, documented vendors, human approval and testing. What we do, and what we don't claim.
+phase: Launch
+status: draft
+gate: Technical owner verifies every control; no unsupported compliance labels.
+cta_heading: Discuss your project requirements
+cta_text: If you have specific security, privacy or vendor requirements, bring them to the first call. We'll tell you plainly what we can and can't meet.
+cta_label: Discuss project requirements
+-->
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Security</span>
+      <h1>How We Handle Data, Access and AI Risk</h1>
+      <p class="lede">Connecting AI to your business means giving someone access to your systems and customer information. Here is exactly how we limit that access, where your data goes, and how we keep AI from acting on its own where it shouldn't.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/contact/">Discuss project requirements</a>
+        <a class="btn btn-secondary" href="#subprocessors">See our vendors</a>
+      </div>
+    </div>
+    <div class="flow-card">
+      <p class="flow-card-title">Our defaults</p>
+      <div class="flow-step"><span class="dot">1</span><div><strong>Minimum access</strong><span>Only what the workflow needs, removed when done</span></div></div>
+      <div class="flow-step"><span class="dot">2</span><div><strong>Your accounts</strong><span>Systems run in your name, not ours</span></div></div>
+      <div class="flow-step ai"><span class="dot">3</span><div><strong>Documented vendors</strong><span>Every service that processes your data, listed</span></div></div>
+      <div class="flow-step human"><span class="dot">✓</span><div><strong>Human approval</strong><span>People sign off on consequential actions</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="callout callout-warn">
+      <p><strong>What we do not claim:</strong> We do not claim any security or compliance certification, audit report or attestation (for example SOC 2, ISO 27001, HIPAA or PCI DSS compliance) unless it is listed on this page with its scope and date. Currently listed: {{todo: List any certification or attestation actually held, with issuer, scope and date. If none, write "None."}}</p>
+    </div>
+    <p>Where your project involves regulated information such as health, payment, legal or financial records, tell us early. Some of those workflows need specific agreements, vendors or legal review before any build starts, and some we may advise against automating.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Controls</span>
+      <h2>How we work with your systems and data</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Least-privilege access</h3>
+        <p>We ask for the narrowest access that lets the work get done: read-only where possible, limited to the specific folders, inboxes, calendars or records the workflow uses. Each person on our side gets their own named login, never a shared one. Access is reviewed during the project and removed at the end unless you've contracted ongoing support.</p>
+      </div>
+      <div class="card">
+        <h3>Client-owned accounts</h3>
+        <p>AI platforms, automation tools and phone numbers are set up in your business's name, billed to you, with you as the owner or administrator. You can see what's running, what it costs, and cut off our access at any time.</p>
+      </div>
+      <div class="card">
+        <h3>Credentials and secrets</h3>
+        <p>We don't ask you to email passwords. Where a system supports it, you invite us as a user or grant access through the vendor's own permission screen. API keys are stored in the platform's secret storage, not in documents or chat messages. {{todo: Name the password manager or secret-handling method actually used and whether multi-factor authentication is enforced on agency accounts.}}</p>
+      </div>
+      <div class="card">
+        <h3>Data minimization</h3>
+        <p>We design workflows to send AI models only the information needed for the task. Sensitive fields that aren't needed are left out or masked. Test and demo work uses sample or de-identified data wherever possible.</p>
+      </div>
+      <div class="card">
+        <h3>Human approval</h3>
+        <p>Actions that commit your business, such as quoting prices, making promises, sending sensitive replies, moving money, or changing records that matter, go to a named person to approve. Escalation paths send urgent or unusual cases straight to your team.</p>
+      </div>
+      <div class="card">
+        <h3>Testing before and after launch</h3>
+        <p>We test with realistic and adversarial cases: wrong or missing information, off-topic requests, attempts to extract information or override instructions, and vendor outages. Known limits are documented. We re-test after significant changes to prompts, workflows or the underlying AI model.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="subprocessors">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Subprocessors</span>
+      <h2>Services that may process your data</h2>
+      <p>Your project's written scope lists every vendor the system uses. Many of those will be accounts you own directly. This list covers services <strong>we</strong> use in running our business and delivering projects that may see client information.</p>
+      <p class="hint">We tell clients before adding a new vendor that will process their data.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Vendor</th><th>Purpose</th><th>Data involved</th></tr></thead>
+        <tbody>
+          <tr><td>{{todo: Vendor name}}</td><td>{{todo: e.g. Email and file storage}}</td><td>{{todo: e.g. Project correspondence and documents}}</td></tr>
+          <tr><td>{{todo: Vendor name}}</td><td>{{todo: e.g. Scheduling / CRM}}</td><td>{{todo: e.g. Inquiry and booking details}}</td></tr>
+          <tr><td>{{todo: Vendor name}}</td><td>{{todo: e.g. AI model provider used for development and testing}}</td><td>{{todo: e.g. Sample and test data; state the provider's data-use setting}}</td></tr>
+          <tr><td>{{todo: Add or remove rows so the list is complete}}</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Retention</span>
+      <h2>How long we keep things</h2>
+      <p>Data inside systems you own stays under your control and your retention settings. We help you set sensible retention for logs, transcripts and recordings as part of the build.</p>
+      <p>For information held on our side, such as notes, exports, test data and correspondence: {{todo: State the actual retention policy and deletion process, e.g. "deleted within __ days of project end unless you ask us to keep it", and how clients can request deletion.}}</p>
+    </div>
+    <div>
+      <span class="eyebrow">AI model providers</span>
+      <h2>What happens inside the AI service</h2>
+      <p>AI model providers have their own terms on whether they store inputs and whether they use them to improve their models. Those terms differ between consumer products and business or API accounts, and they change over time.</p>
+      <p>For each project, we choose account types and settings appropriate to the data involved, document them in your scope, and show you where to check them. We recommend reviewing the provider's current terms yourself before go-live.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Incidents</span>
+      <h2>If something goes wrong</h2>
+      <p>If we suspect that client data has been exposed or an account has been misused, we will contain the issue, tell you promptly, explain what we know and don't know, and help you through next steps. Every system we build has a documented way to pause it.</p>
+      <p><strong>Security contact:</strong> {{todo: Named person or role, and the email or phone number for reporting a security concern.}}</p>
+      <p><strong>Notification commitment:</strong> {{todo: The notification timeframe committed to in client contracts. Do not state one until it is contractual.}}</p>
+    </div>
+    <div>
+      <span class="eyebrow">Verification</span>
+      <h2>How this page is kept accurate</h2>
+      <p>Each control described here is reviewed and confirmed by our technical owner, and re-checked when our tools or practices change.</p>
+      <dl class="kv">
+        <dt>Technical owner</dt><dd>{{todo: Name and role of the person who verifies these controls}}</dd>
+        <dt>Last reviewed</dt><dd>{{todo: Date of last review}}</dd>
+      </dl>
+      <p style="margin-top:16px">Need a security questionnaire completed or a data processing agreement? {{todo: State whether these are available and how to request them.}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Related</h2></div>
+    {{related: /process/, /services/ai-consulting/, /contact/}}
+  </div>
+</section>
+
+{{cta}}
